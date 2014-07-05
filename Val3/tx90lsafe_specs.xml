@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<val3specs>
+  <rate value="250.0" />
+  <queue size="3000" />
+  <joints num="6" value="0 0 0 0 0 0" min="-30 -30 -30 -30 -30 -30" max="30 30 30 30 30 30"/>
+  <velocity value="0 0 0 0 0 0" max="20 20 20 20 20 20" />
+  <acceleration value="0 0 0 0 0 0" max="50 50 50 50 50 50"/>
+</val3specs>
