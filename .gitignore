@@ -1,0 +1,6 @@
+*.pyc
+CMakeFiles
+Makefile
+arduinoCalibrate.txt
+SafeSerialClient*
+Val3SerialClient*
