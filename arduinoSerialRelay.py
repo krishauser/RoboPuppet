@@ -1,6 +1,7 @@
 from readArduino import *
 from arduinoCalibrate import Calibration
 import messagePublisher
+import settings
 from filters import *
 from klampt import vectorops
 import time
@@ -14,11 +15,11 @@ print """ardunoSerialRelay.py: relays messages from an Arduino reader to a
 
 Options:
    -synthetic: simulates the Arduino data (moves robot in circle)
-   -port=fn: sets the Arduino read port (default /dev/ttyS6)
+   -port=fn: sets the Arduino read port (default %s)
 
-"""
+"""%(settings.defaultPort,)
 
-port = '/dev/ttyS6'
+port = settings.defaultPort
 synthetic = False
 for arg in sys.argv[1:]:
     if arg=="-synthetic":
